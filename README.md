@@ -1,12 +1,12 @@
-### Component Library Cheatsheet
+## Component Library Cheatsheet
 
 Lorem Ipsum
 
-## Version number
+### Version 1.1.1
 
-Lorem Ipsum
+- Feature
 
-## Author
+### Author
 
 &copy; Avans Front-End Gilde 2023
 

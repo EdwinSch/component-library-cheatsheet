@@ -1,13 +1,14 @@
 ## Component Library Cheatsheet
 
-Lorem Ipsum
+🚀 [deployment link - production version](https://google.com)
+
+App description
 
 ### Version 1.1.1
 
-- Feature
+- Feature item
+- Feature item
 
 ### Author
 
 &copy; Avans Front-End Gilde 2023
-
-🚀 [SOME LINK](https://google.com)

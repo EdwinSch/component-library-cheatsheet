@@ -19,7 +19,6 @@ a:hover {
   --black: #000000;
   --white: #ffffff;
   --lightGrey: #ebebeb;
-  --textPadding: 8px;
   --inspect: solid red 1px;
 }
 
@@ -101,10 +100,20 @@ header img {
   }
 }
 
+/* --- HEADING STYLES --- */
 h1 {
   color: var(--white);
 }
 
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.85rem;
+}
+
+/* --- LAYOUT STYLES --- */
 main {
   display: flex;
 }
@@ -113,29 +122,37 @@ aside {
   background-color: var(--lightGrey);
 }
 
+/* --- CAT ITEM STYLES --- */
 .content {
   padding: 1.5rem;
 }
 
 .cat-container {
-  width: 300px;
-  border: 1px solid black;
+  min-width: 300px;
 }
 
-h2 {
-  padding: var(--textPadding);
+.main-cat-title {
+  padding: 16px 17px;
   background-color: var(--avansRed);
   color: var(--white);
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
 }
 
-h3 {
-  padding: var(--textPadding);
+.sub-cat-container {
+  border-radius: 0 0 8px 8px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.sub-cat-title {
+  padding: 8px 16px;
   background-color: var(--black);
   color: var(--white);
 }
 
 .rule {
-  padding: var(--textPadding);
+  padding: 8px 16px;
   display: flex;
   justify-content: space-between;
 }

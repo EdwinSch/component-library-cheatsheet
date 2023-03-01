@@ -21,6 +21,47 @@
   </head>
 
   <body>
-    <h1>Hello World</h1>
+    <!-- Header -->
+    <header>
+      <h1>CSS Cheatsheet</h1>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Filters -->
+      <aside class="filters">
+        <input type="text" name="search" id="search" placeholder="search" />
+      </aside>
+      <!-- Content -> needs responsive grid layout -->
+      <section class="content">
+        <!-- Category block -->
+        <article class="cat-container">
+          <h2 class="cat-title">Spacing</h2>
+          <!-- Sub Category 1 -->
+          <div class="sub-cat-container">
+            <h3 class="sub-title">margin</h3>
+            <div class="rule">
+              <p class="classname">.marginleftzero</p>
+              <p class="result">margin-left: 0px</p>
+            </div>
+            <div class="rule">
+              <p class="classname">.marginleftxs</p>
+              <p class="result">margin-left: 8px</p>
+            </div>
+          </div>
+          <!-- Sub Category 2 -->
+          <div class="sub-cat-container">
+            <h3 class="sub-title">padding</h3>
+            <div class="rule">
+              <p class="classname">.paddingleftzero</p>
+              <p class="result">padding-left: 0px</p>
+            </div>
+            <div class="rule">
+              <p class="classname">.paddingleftxs</p>
+              <p class="result">padding-left: 8px</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

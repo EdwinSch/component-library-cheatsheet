@@ -156,3 +156,7 @@ aside {
   display: flex;
   justify-content: space-between;
 }
+
+.rule:nth-child(odd) {
+  background-color: #f2f2f2;
+}

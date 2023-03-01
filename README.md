@@ -1,8 +1,8 @@
 ## Component Library Cheatsheet
 
-🚀 [deployment link - production version](https://google.com)
+🚀 [CI/CD Environment](https://edwinsch.github.io/component-library-cheatsheet/)
 
-App description
+Project building repo for the component library cheatsheet.
 
 ### Version 1.1.1
 

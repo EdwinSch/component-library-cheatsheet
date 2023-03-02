@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* --- LINK STYLES --- */
 a {
   text-decoration: none;
 }
@@ -122,11 +123,22 @@ aside {
   background-color: var(--lightGrey);
 }
 
-/* --- CAT ITEM STYLES --- */
+/* --- CONTENT STYLES --- */
 .content {
   padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1.5rem;
+  width: 100%;
 }
 
+.content .col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* --- CAT ITEM STYLES --- */
 .cat-container {
   min-width: 300px;
 }

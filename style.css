@@ -147,6 +147,11 @@ aside input:focus-visible {
   outline: none;
 }
 
+aside input:focus,
+aside input:focus::placeholder {
+  color: #000;
+}
+
 aside input::placeholder {
   font-family: Frutiger, "Times New Roman", Times, serif;
 }

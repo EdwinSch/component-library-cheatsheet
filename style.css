@@ -20,6 +20,10 @@ ul {
   padding: 0;
   margin: 0;
 }
+/* --- HELPERS --- */
+.inspect {
+  border: solid red 2px;
+}
 
 /* --- ROOT VARIABLES --- */
 :root {
@@ -27,7 +31,6 @@ ul {
   --black: #000000;
   --white: #ffffff;
   --lightGrey: #ebebeb;
-  --inspect: solid red 1px;
 }
 
 /* --- FONTS --- */
@@ -139,7 +142,7 @@ aside {
 }
 
 aside input {
-  background-image: url('img/search.svg');
+  background-image: url("img/search.svg");
   background-repeat: no-repeat;
   background-position: 10px center;
   width: 100%;
@@ -152,7 +155,7 @@ aside input {
 
 aside input:focus,
 aside input:focus-visible {
-  background-image: url('img/search-black.svg');
+  background-image: url("img/search-black.svg");
   border: 1px solid #000;
   outline: none;
 }

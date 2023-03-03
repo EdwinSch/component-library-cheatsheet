@@ -14,6 +14,13 @@ a:hover {
   text-decoration: underline;
 }
 
+/* --- LIST STYLES --- */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* --- ROOT VARIABLES --- */
 :root {
   --avansRed: #c6002a;
@@ -159,9 +166,23 @@ aside input::placeholder {
   font-family: Frutiger, "Times New Roman", Times, serif;
 }
 
+aside .cat-category-container {
+  display: none;
+}
+
+aside .cat-category-container a {
+  color: #000;
+  margin: 16px 0;
+  display: inline-block;
+}
+
 @media screen and (min-width: 767px) {
   aside {
     background-color: var(--lightGrey);
+  }
+
+  aside .cat-category-container {
+    display: block;
   }
 }
 
@@ -213,6 +234,10 @@ aside input::placeholder {
 
 .rule:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+code {
+  color: var(--avansRed);
 }
 
 /* --- FOOTER STYLES --- */

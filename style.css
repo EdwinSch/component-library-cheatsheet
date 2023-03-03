@@ -131,10 +131,24 @@ aside {
 aside input {
   background-image: url('img/search.svg');
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: 10px center;
   width: 100%;
-  background-color: #fff;
   border: 1px solid #ccc;
+  color: #555;
+  padding: 10px 8px 10px 44px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+aside input:focus,
+aside input:focus-visible {
+  background-image: url('img/search-black.svg');
+  border: 1px solid #000;
+  outline: none;
+}
+
+aside input::placeholder {
+  font-family: Frutiger, "Times New Roman", Times, serif;
 }
 
 /* --- CONTENT STYLES --- */

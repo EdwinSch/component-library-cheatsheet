@@ -14,6 +14,13 @@ a:hover {
   text-decoration: underline;
 }
 
+/* --- LIST STYLES --- */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* --- ROOT VARIABLES --- */
 :root {
   --avansRed: #c6002a;
@@ -99,12 +106,7 @@ header img {
   font-size: 18px;
 }
 
-.header-version-number {
-  margin: 0 0 0 auto;
-}
-
 @media screen and (max-width: 767px) {
-  .header-version-number,
   header nav {
     display: none;
   }
@@ -124,20 +126,72 @@ h3 {
 }
 
 /* --- LAYOUT STYLES --- */
-main {
-  display: flex;
+@media screen and (min-width: 767px) {
+  main {
+    min-height: calc(100vh - 64px);
+    display: flex;
+  }
 }
 
+/* --- Sidebar styles --- */
 aside {
-  background-color: var(--lightGrey);
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+aside input {
+  background-image: url('img/search.svg');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  width: 100%;
+  border: 1px solid #ccc;
+  color: #555;
+  padding: 10px 8px 10px 44px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+aside input:focus,
+aside input:focus-visible {
+  background-image: url('img/search-black.svg');
+  border: 1px solid #000;
+  outline: none;
+}
+
+aside input:focus,
+aside input:focus::placeholder {
+  color: #000;
+}
+
+aside input::placeholder {
+  font-family: Frutiger, "Times New Roman", Times, serif;
+}
+
+aside .cat-category-container {
+  display: none;
+}
+
+aside .cat-category-container a {
+  color: #000;
+  margin: 16px 0;
+  display: inline-block;
+}
+
+@media screen and (min-width: 767px) {
+  aside {
+    background-color: var(--lightGrey);
+  }
+
+  aside .cat-category-container {
+    display: block;
+  }
 }
 
 /* --- CONTENT STYLES --- */
 .content {
-  padding: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1.5rem;
+  padding: 1.5rem;
   width: 100%;
 }
 
@@ -178,6 +232,17 @@ aside {
   justify-content: space-between;
 }
 
-.rule:nth-child(odd) {
+.rule:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+code {
+  color: var(--avansRed);
+}
+
+/* --- FOOTER STYLES --- */
+footer {
+  text-align: center;
+  color: #c7c7c7;
+  margin: 16px 0;
 }

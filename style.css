@@ -183,7 +183,7 @@ aside input {
   justify-content: space-between;
 }
 
-.rule:nth-child(odd) {
+.rule:nth-child(even) {
   background-color: #f2f2f2;
 }
 

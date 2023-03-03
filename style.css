@@ -119,13 +119,16 @@ h3 {
 }
 
 /* --- LAYOUT STYLES --- */
-main {
+@media screen and (min-width: 767px) {
+  main {
+    min-height: calc(100vh - 64px);
+    display: flex;
+  }
 }
 
 /* --- Sidebar styles --- */
 aside {
-  /*  background-color: var(--lightGrey);*/
-  margin: 1.5rem 1.5rem 0 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 aside input {
@@ -154,6 +157,12 @@ aside input:focus::placeholder {
 
 aside input::placeholder {
   font-family: Frutiger, "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 767px) {
+  aside {
+    background-color: var(--lightGrey);
+  }
 }
 
 /* --- CONTENT STYLES --- */

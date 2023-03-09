@@ -195,34 +195,25 @@ aside .cat-category-container a {
 /* --- CONTENT STYLES --- */
 .content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 1.5rem;
-  padding: 1.5rem;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-content: start;
   width: 100%;
-}
-
-.content .col {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  padding: 1.5rem;
 }
 
 /* --- CAT ITEM STYLES --- */
 .cat-container {
   min-width: 300px;
+  border: 2px solid black;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .main-cat-title {
-  padding: 16px 18px;
+  padding: 1rem;
   background-color: var(--black);
   color: var(--white);
-  border-radius: 8px 8px 0 0;
-  overflow: hidden;
-}
-
-.sub-cat-container {
-  border-radius: 0 0 8px 8px;
-  border: 2px solid black;
   overflow: hidden;
 }
 

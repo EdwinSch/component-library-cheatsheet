@@ -196,7 +196,7 @@ aside .cat-category-container a {
 .content {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   align-content: start;
   width: 100%;
   padding: 1.5rem;
@@ -233,9 +233,33 @@ aside .cat-category-container a {
   background-color: #f2f2f2;
 }
 
+.rule:hover {
+  background-color: var(--avansRed);
+  color: var(--white);
+  cursor: pointer;
+}
+
 code {
   color: var(--avansRed);
   font-size: 0.85rem;
+}
+
+.rule:hover code {
+  color: var(--white);
+}
+
+.results {
+  display: flex;
+}
+
+.results a {
+  color: #000;
+  display: block;
+  margin: 0 0 0 16px;
+}
+
+.rule:hover a {
+  color: var(--white);
 }
 
 /* --- FOOTER STYLES --- */

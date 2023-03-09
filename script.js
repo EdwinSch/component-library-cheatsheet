@@ -8,8 +8,8 @@ const data = [
       {
         sub_title: "margin",
         rules: [
-          { classname: "marginleftzero", results: "margin-left: 0px" },
-          { classname: "marginleftxs", results: "margin-left: 8px" },
+          { classname: "marginleftzero", results: ["margin-left: 0px"] },
+          { classname: "marginleftxs", results: ["margin-left: 8px"] },
         ],
       },
       {
@@ -19,7 +19,7 @@ const data = [
             classname: "paddingleftzero",
             results: ["pad-test: 0px", "pad-test: 2px", "pad-test: 4px"],
           },
-          { classname: "paddingleftxs", results: "padding-left: 8px" },
+          { classname: "paddingleftxs", results: ["padding-left: 8px"] },
         ],
       },
     ],
@@ -31,16 +31,16 @@ const data = [
       {
         sub_title: "primary",
         rules: [
-          { classname: "red", results: "#ff0000" },
-          { classname: "blue", results: "#3d85c6" },
+          { classname: "red", results: ["#ff0000"] },
+          { classname: "blue", results: ["#3d85c6"] },
           ,
         ],
       },
       {
         sub_title: "secondary",
         rules: [
-          { classname: "green", results: "#228b22" },
-          { classname: "yellow", results: "#ffff00" },
+          { classname: "green", results: ["#228b22"] },
+          { classname: "yellow", results: ["#ffff00"] },
         ],
       },
     ],
@@ -50,6 +50,7 @@ const data = [
 const output = document.querySelector(".content");
 let displaySubCategories;
 let displayRules;
+let displayResults;
 
 /* ---- FUNCTIONS ---- */
 
@@ -74,8 +75,9 @@ const displayData = data.map(function (category) {
                 <div class="rule">
                  <code class="classname">${rule.classname}</code>
                     <div class="results">
-                    
-                     <p class="result">${rule.results}</p>
+                    ${(displayResults = rule.results.map(function (kiwi) {
+                      return ` <p class="result">${kiwi}</p><br>`;
+                    })).join("")}
                     </div> 
                 </div>
                 `;

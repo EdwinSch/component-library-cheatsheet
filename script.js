@@ -15,7 +15,10 @@ const data = [
       {
         sub_title: "padding",
         rules: [
-          { classname: "paddingleftzero", results: "padding-left: 0px" },
+          {
+            classname: "paddingleftzero",
+            results: ["pad-test: 0px", "pad-test: 2px", "pad-test: 4px"],
+          },
           { classname: "paddingleftxs", results: "padding-left: 8px" },
         ],
       },
@@ -71,6 +74,7 @@ const displayData = data.map(function (category) {
                 <div class="rule">
                  <code class="classname">${rule.classname}</code>
                     <div class="results">
+                    
                      <p class="result">${rule.results}</p>
                     </div> 
                 </div>

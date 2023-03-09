@@ -171,6 +171,9 @@ aside input::placeholder {
 
 aside .cat-category-container {
   display: none;
+  margin: 1rem -1.5rem 0 -1.5rem;
+  padding: 0 1.5rem;
+  border-top: 1px solid var(--white);
 }
 
 aside .cat-category-container a {
@@ -210,8 +213,8 @@ aside .cat-category-container a {
 }
 
 .main-cat-title {
-  padding: 16px 17px;
-  background-color: var(--avansRed);
+  padding: 16px 18px;
+  background-color: var(--black);
   color: var(--white);
   border-radius: 8px 8px 0 0;
   overflow: hidden;
@@ -219,14 +222,14 @@ aside .cat-category-container a {
 
 .sub-cat-container {
   border-radius: 0 0 8px 8px;
-  border: 1px solid black;
+  border: 2px solid black;
   overflow: hidden;
 }
 
 .sub-cat-title {
   padding: 8px 16px;
-  background-color: var(--black);
-  color: var(--white);
+  border-bottom: 2px solid var(--black);
+  border-top: 2px solid var(--black);
 }
 
 .rule {
@@ -241,6 +244,7 @@ aside .cat-category-container a {
 
 code {
   color: var(--avansRed);
+  font-size: 0.85rem;
 }
 
 /* --- FOOTER STYLES --- */

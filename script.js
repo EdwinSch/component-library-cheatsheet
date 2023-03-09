@@ -54,7 +54,8 @@ let displayRules;
 const displayData = data.map(function (category) {
   const newComponent = document.createElement("article");
   newComponent.classList.add("cat-container");
-  newComponent.innerHTML = `<article class="cat-container">
+  newComponent.dataset.id = category.id;
+  newComponent.innerHTML = `
     <div class="main-cat-title">
         <h2 class="cat-title">${category.cat_title}</h2>
     </div>
@@ -64,20 +65,22 @@ const displayData = data.map(function (category) {
             <div class="sub-cat-title">
               <h3 class="sub-title">${sub.sub_title}</h3>
             </div>
+            <div class="sub-cat-content">
               ${(displayRules = sub.rules.map(function (rule) {
                 return `
                 <div class="rule">
-                 <p class="classname">${rule.classname}</p>
+                 <code class="classname">${rule.classname}</code>
                     <div class="results">
                      <p class="result">${rule.results}</p>
                     </div>
                 </div>
                 `;
               })).join("")}
+            </div>
             `;
           })).join("")}
         </div>
-    </article>`;
+    `;
   // Push category components to DOM
   output.appendChild(newComponent);
 });

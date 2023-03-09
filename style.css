@@ -122,10 +122,12 @@ h1 {
 
 h2 {
   font-size: 1rem;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 0.85rem;
+  text-transform: capitalize;
 }
 
 /* --- LAYOUT STYLES --- */
@@ -244,6 +246,10 @@ aside .cat-category-container a {
 
 code {
   color: var(--avansRed);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.results {
   font-size: 0.85rem;
 }
 

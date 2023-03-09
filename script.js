@@ -72,7 +72,7 @@ const displayData = data.map(function (category) {
                  <code class="classname">${rule.classname}</code>
                     <div class="results">
                      <p class="result">${rule.results}</p>
-                    </div>
+                    </div> 
                 </div>
                 `;
               })).join("")}

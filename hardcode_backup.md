@@ -1,6 +1,6 @@
         ### category component
 
-          <article class="cat-container">
+          <article class="cat-container" data-id="37hwd2">
             <div class="main-cat-title">
               <h2 class="cat-title">Spacing</h2>
             </div>

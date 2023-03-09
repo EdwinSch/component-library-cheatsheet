@@ -254,10 +254,6 @@ code {
   color: var(--white);
 }
 
-.results {
-  display: flex;
-}
-
 .results a {
   color: #000;
   display: block;

@@ -75,8 +75,8 @@ const displayData = data.map(function (category) {
                 <div class="rule">
                  <code class="classname">${rule.classname}</code>
                     <div class="results">
-                    ${(displayResults = rule.results.map(function (kiwi) {
-                      return ` <p class="result">${kiwi}</p><br>`;
+                    ${(displayResults = rule.results.map(function (result) {
+                      return ` <p class="result">${result}</p>`;
                     })).join("")}
                     </div> 
                 </div>

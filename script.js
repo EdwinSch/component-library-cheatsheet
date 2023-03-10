@@ -7,9 +7,9 @@ let displaySubCategories;
 let displayRules;
 let displayResults;
 
-/* ---- FUNCTIONS ---- */
+/* ---- SCRIPT ---- */
 
-// create new component container & map data structure
+// Create new component container & map data structure
 const displayData = data.map(function (category) {
   const newComponent = document.createElement("article");
   newComponent.classList.add("cat-container");
@@ -46,4 +46,19 @@ const displayData = data.map(function (category) {
     `;
   // Push category components to DOM
   output.appendChild(newComponent);
+
+  // Invoke clipboard function
+  copyToClipboard();
 });
+
+/* ---- FUNCTIONS ---- */
+
+// Clipboard Function
+function copyToClipboard() {
+  const classes = document.querySelectorAll("code");
+  classes.forEach((code) => {
+    code.addEventListener("click", function () {
+      navigator.clipboard.writeText(code.innerHTML);
+    });
+  });
+}

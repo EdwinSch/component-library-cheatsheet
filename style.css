@@ -110,6 +110,7 @@ header img {
 }
 
 header .version-number {
+  font-size: 0.85rem;
   margin: 0 0 0 auto;
 }
 

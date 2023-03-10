@@ -2,16 +2,21 @@
 
 import { data } from "./data.js";
 
+const filterBtnContainer = document.querySelector(".filter-btns-container");
 const output = document.querySelector(".content");
 const notification = document.querySelector(".cs_notification");
 
 let displaySubCategories;
 let displayRules;
 let displayResults;
+let getFilterBtns;
 
 /* ---- SCRIPT ---- */
 
-// Create new component container & map data structure
+// Map filter buttons (On Load)
+mapFilterBtns();
+
+// Create new component container & map full data set (On Load)
 const displayData = data.map(function (category) {
   const newComponent = document.createElement("article");
   newComponent.classList.add("cat-container");
@@ -52,9 +57,29 @@ const displayData = data.map(function (category) {
   copyToClipboard();
 });
 
+// --- filter buttons functionality
+getFilterBtns.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    console.log(this.dataset.id);
+  });
+});
+
 /* ---- FUNCTIONS ---- */
 
-// Clipboard Function
+// Map filter buttons function
+function mapFilterBtns() {
+  const displayFilterBtns = data
+    .map(function (btn) {
+      return `<li>
+            <a href="#" class="filter-btn" title="Click to filter by category" data-id=${btn.cat_title}>${btn.cat_title}</a>
+          </li>`;
+    })
+    .join("");
+  filterBtnContainer.innerHTML = displayFilterBtns;
+  getFilterBtns = document.querySelectorAll(".filter-btn");
+}
+
+// Clipboard function
 function copyToClipboard() {
   const classes = document.querySelectorAll("code");
   classes.forEach((code) => {

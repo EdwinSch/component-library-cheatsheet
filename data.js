@@ -234,12 +234,10 @@ export const data = [
           { classname: "justify-content-stretch", results: ["stretch"] },
           { classname: "align-children-start", results: ["flex-start"] },
           { classname: "align-content-end", results: ["flex-end"] },
-        ],
-      },
-      {
-        sub_title: "Rounded corners",
-        rules: [
-          { classname: "border-rounded", results: ["8px"] },
+          { classname: "align-content-center", results: ["center"] },
+          { classname: "align-content-between", results: ["space-between"] },
+          { classname: "align-content-around", results: ["space-around"] },
+          { classname: "align-content-stretch", results: ["stretch"] },
         ],
       },
     ],

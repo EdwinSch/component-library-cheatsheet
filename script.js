@@ -28,7 +28,9 @@ const displayData = data.map(function (category) {
               ${(displayRules = sub.rules.map(function (rule) {
                 return `
                 <div class="rule">
-                 <code class="classname">${rule.classname}</code>
+                 <code class="classname" title="Click to copy class name">${
+                   rule.classname
+                 }</code>
                     <div class="results">
                     ${(displayResults = rule.results.map(function (result) {
                       return ` <p class="result">${result}</p>`;

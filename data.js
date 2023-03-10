@@ -1,5 +1,5 @@
 export const data = [
-  // START OBJECT
+  // ---- TYPOGRAPHY
   {
     id: "s6zy63",
     cat_title: "typography",
@@ -84,7 +84,70 @@ export const data = [
       },
     ],
   },
-  // END OBJECT
+  // ---- BACKGROUNDS
+  {
+    id: "xpwzp3",
+    cat_title: "backgrounds",
+    sub_cats: [
+      {
+        sub_title: "color",
+        rules: [
+          {
+            classname: "background-success",
+            results: ["background-color: ??"],
+          },
+          {
+            classname: "background-warning",
+            results: ["background-color: ??"],
+          },
+          { classname: "background-danger", results: ["background-color: ??"] },
+          {
+            classname: "background-default",
+            results: ["background-color: ??"],
+          },
+          {
+            classname: "background-inverse",
+            results: ["background-color: ??"],
+          },
+          { classname: "background-info", results: ["background-color: ??"] },
+        ],
+      },
+    ],
+  },
+  // ---- DISPLAY
+  {
+    id: "m87wuf",
+    cat_title: "display",
+    sub_cats: [
+      {
+        sub_title: "type",
+        rules: [
+          { classname: "d-none", results: ["display: none"] },
+          { classname: "d-flex", results: ["display: flex"] },
+          { classname: "d-inline-flex", results: ["display: inline-flex"] },
+          { classname: "d-inline", results: ["display: inline"] },
+          { classname: "d-inline-block", results: ["display: inline-block"] },
+          { classname: "show, d-block", results: ["display: block"] },
+        ],
+      },
+    ],
+  },
+  // ---- ALIGN
+  {
+    id: "5lhrki",
+    cat_title: "align",
+    sub_cats: [
+      {
+        sub_title: "vertical alignment",
+        rules: [
+          { classname: "align-top", results: ["vertical-align: top"] },
+          { classname: "align-middle", results: ["vertical-align: middle"] },
+          { classname: "align-bottom", results: ["vertical-align: bottom"] },
+        ],
+      },
+    ],
+  },
+  // ---- DIMENSIONS
   {
     id: "h3pbrf",
     cat_title: "dimensions",

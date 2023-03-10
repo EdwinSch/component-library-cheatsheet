@@ -101,7 +101,8 @@ export const data = [
             results: ["background-color: #f2994a"],
           },
           { classname: "background-danger", 
-            results: ["background-color: #c6002a"] },
+            results: ["background-color: #c6002a"] 
+          },
           {
             classname: "background-default",
             results: ["background-color: #c6002a"],

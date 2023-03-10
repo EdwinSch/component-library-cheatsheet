@@ -1,51 +1,6 @@
 /* ---- TARGETS && INITIALIZERS ---- */
 
-const data = [
-  {
-    id: "h3pbrf",
-    cat_title: "spacing",
-    sub_cats: [
-      {
-        sub_title: "margin",
-        rules: [
-          { classname: "marginleftzero", results: ["margin-left: 0px"] },
-          { classname: "marginleftxs", results: ["margin-left: 8px"] },
-        ],
-      },
-      {
-        sub_title: "padding",
-        rules: [
-          {
-            classname: "paddingleftzero",
-            results: ["pad-test: 0px", "pad-test: 2px", "pad-test: 4px"],
-          },
-          { classname: "paddingleftxs", results: ["padding-left: 8px"] },
-        ],
-      },
-    ],
-  },
-  {
-    id: "s6zy63",
-    cat_title: "colors",
-    sub_cats: [
-      {
-        sub_title: "primary",
-        rules: [
-          { classname: "red", results: ["#ff0000"] },
-          { classname: "blue", results: ["#3d85c6"] },
-          ,
-        ],
-      },
-      {
-        sub_title: "secondary",
-        rules: [
-          { classname: "green", results: ["#228b22"] },
-          { classname: "yellow", results: ["#ffff00"] },
-        ],
-      },
-    ],
-  },
-];
+import { data } from "./data.js";
 
 const output = document.querySelector(".content");
 let displaySubCategories;

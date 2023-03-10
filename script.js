@@ -3,6 +3,8 @@
 import { data } from "./data.js";
 
 const output = document.querySelector(".content");
+const notification = document.querySelector(".cs_notification");
+
 let displaySubCategories;
 let displayRules;
 let displayResults;
@@ -46,7 +48,6 @@ const displayData = data.map(function (category) {
     `;
   // Push category components to DOM
   output.appendChild(newComponent);
-
   // Invoke clipboard function
   copyToClipboard();
 });
@@ -59,6 +60,11 @@ function copyToClipboard() {
   classes.forEach((code) => {
     code.addEventListener("click", function () {
       navigator.clipboard.writeText(code.innerHTML);
+      // Trigger notification
+      notification.classList.add("show");
+      setTimeout(() => {
+        notification.classList.remove("show");
+      }, 1500);
     });
   });
 }

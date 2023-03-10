@@ -130,7 +130,6 @@ h1 {
 
 h2 {
   font-size: 1rem;
-  text-transform: uppercase;
 }
 
 h3 {
@@ -186,10 +185,20 @@ aside .cat-category-container {
   border-top: 1px solid var(--white);
 }
 
+aside h2 {
+  margin: 16px 0 8px 0;
+  font-size: 1.2rem;
+}
+
 aside .cat-category-container a {
   color: #000;
   margin: 16px 0;
   display: inline-block;
+  text-decoration: underline;
+}
+
+aside .cat-category-container a:hover {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 767px) {
@@ -225,6 +234,7 @@ aside .cat-category-container a {
   background-color: var(--black);
   color: var(--white);
   overflow: hidden;
+  text-transform: uppercase;
 }
 
 .sub-cat-title {

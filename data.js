@@ -49,27 +49,27 @@ export const data = [
         rules: [
           {
             classname: "text-small",
-            results: ["font-size: ??"],
+            results: ["font-size: 14px"],
           },
           {
             classname: "text-large",
-            results: ["font-size: ??"],
+            results: ["font-size: 18px"],
           },
           {
             classname: "text-light",
-            results: ["font-weight: ??"],
+            results: ["font-weight: 100"],
           },
           {
             classname: "text-normal",
-            results: ["font-weight: ??"],
+            results: ["font-weight: normal"],
           },
           {
             classname: "text-semibold",
-            results: ["font-weight: ??"],
+            results: ["font-weight: 600"],
           },
           {
             classname: "text-bold",
-            results: ["font-weight: ??"],
+            results: ["font-weight: bold"],
           },
         ],
       },

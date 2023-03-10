@@ -179,4 +179,42 @@ export const data = [
       },
     ],
   },
+  // ---- RESPONSIVE
+  {
+    id: "2i0watf0",
+    cat_title: "responsive",
+    sub_cats: [
+      {
+        sub_title: "hide options",
+        rules: [
+          { classname: "hide-phone", results: ["display: none"] },
+          { classname: "hide-tablet", results: ["display: none"] },
+          { classname: "hide-desktop", results: ["display: none"] },
+        ],
+      },
+    ],
+  },
+  // ---- BORDERS
+  {
+    id: "gfg6jbtr",
+    cat_title: "borders",
+    sub_cats: [
+      {
+        sub_title: "borders",
+        rules: [
+          { classname: "border", results: ["1px solid #e5e5e5"] },
+          { classname: "border-top", results: ["1px solid #e5e5e5"] },
+          { classname: "border-bottom", results: ["1px solid #e5e5e5"] },
+          { classname: "border-left", results: ["1px solid #e5e5e5"] },
+          { classname: "border-right", results: ["1px solid #e5e5e5"] },
+        ],
+      },
+      {
+        sub_title: "Rounded corners",
+        rules: [
+          { classname: "border-rounded", results: ["8px"] },
+        ],
+      },
+    ],
+  },
 ];

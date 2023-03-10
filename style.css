@@ -237,6 +237,8 @@ aside .cat-category-container a {
   padding: 8px 16px;
   display: flex;
   justify-content: space-between;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
 }
 
 .rule:nth-child(even) {
@@ -245,32 +247,10 @@ aside .cat-category-container a {
 
 code {
   color: var(--avansRed);
-  font-size: 0.85rem;
 }
 
 code:hover {
   background-color: var(--avansRed);
   color: var(--white);
   cursor: pointer;
-}
-
-.results {
-  font-size: 0.85rem;
-}
-
-.results a {
-  color: #000;
-  display: block;
-  margin: 0 0 0 16px;
-}
-
-.rule:hover a {
-  color: var(--white);
-}
-
-/* --- FOOTER STYLES --- */
-footer {
-  text-align: center;
-  color: #c7c7c7;
-  margin: 16px 0;
 }

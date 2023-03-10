@@ -217,4 +217,31 @@ export const data = [
       },
     ],
   },
+  // ---- FLEXBOX
+  {
+    id: "by8va5fr",
+    cat_title: "flexbox",
+    sub_cats: [
+      {
+        sub_title: "box alignment",
+        rules: [
+          { classname: "justify-content-start", results: ["flex-start"] },
+          { classname: "justify-content-end", results: ["flex-end"] },
+          { classname: "justify-content-center", results: ["center"] },
+          { classname: "justify-content-between", results: ["space-between"] },
+          { classname: "justify-content-around", results: ["space-around"] },
+          { classname: "justify-content-evenly", results: ["space-evenly"] },
+          { classname: "justify-content-stretch", results: ["stretch"] },
+          { classname: "align-children-start", results: ["flex-start"] },
+          { classname: "align-content-end", results: ["flex-end"] },
+        ],
+      },
+      {
+        sub_title: "Rounded corners",
+        rules: [
+          { classname: "border-rounded", results: ["8px"] },
+        ],
+      },
+    ],
+  },
 ];

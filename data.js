@@ -131,7 +131,7 @@ export const data = [
           { classname: "d-inline-flex", results: ["display: inline-flex"] },
           { classname: "d-inline", results: ["display: inline"] },
           { classname: "d-inline-block", results: ["display: inline-block"] },
-          { classname: "show, d-block", results: ["display: block"] },
+          { classname: "d-block", results: ["display: block"] },
         ],
       },
     ],

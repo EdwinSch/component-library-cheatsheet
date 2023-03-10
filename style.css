@@ -243,23 +243,19 @@ aside .cat-category-container a {
   background-color: #f2f2f2;
 }
 
-.rule:hover {
+code {
+  color: var(--avansRed);
+  font-size: 0.85rem;
+}
+
+code:hover {
   background-color: var(--avansRed);
   color: var(--white);
   cursor: pointer;
 }
 
-code {
-  color: var(--avansRed);
-  font-size: 0.85rem;
-  cursor: pointer;
-}
 .results {
   font-size: 0.85rem;
-}
-
-.rule:hover code {
-  color: var(--white);
 }
 
 .results a {

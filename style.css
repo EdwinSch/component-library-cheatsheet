@@ -138,6 +138,10 @@ h3 {
 }
 
 /* --- LAYOUT STYLES --- */
+main {
+  position: relative;
+}
+
 @media screen and (min-width: 767px) {
   main {
     min-height: calc(100vh - 64px);
@@ -247,6 +251,7 @@ aside .cat-category-container a:hover {
   padding: 8px 16px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   font-size: 0.85rem;
   line-height: 1.2rem;
 }
@@ -263,4 +268,14 @@ code:hover {
   background-color: var(--avansRed);
   color: var(--white);
   cursor: pointer;
+}
+
+/* --- NOTIFICATION ITEM STYLES --- */
+.cs_notification {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  width: 480px;
+  box-shadow: ;
 }

@@ -272,10 +272,58 @@ code:hover {
 
 /* --- NOTIFICATION ITEM STYLES --- */
 .cs_notification {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  position: fixed;
+  top: 88px;
+  left: 0;
   z-index: 9999;
-  width: 480px;
-  box-shadow: ;
+  width: 100%;
+  display: none;
+}
+
+.cs_snackbar {
+  background-color: #d4efdf;
+  padding: 1rem;
+  margin: 0 1.5rem;
+  border-radius: 12px;
+  box-shadow: 1.6px 2.7px 2.7px rgba(0,0,0,.18);
+}
+
+@media screen and (min-width: 768px) {
+  .cs_notification {
+    left: auto;
+    right: 1.5rem;
+    width: 450px;
+  }
+
+  .cs_snackbar {
+    margin: 0;
+  }
+}
+
+.cs_notification.show {
+  display: block;
+}
+
+.cs_notification-title {
+  display: flex;
+  margin-bottom: 4px;
+  align-items: center;
+}
+
+.cs_notification-title span {
+  font-weight: bold;
+}
+
+.cs_notification-title .icon-check {
+  font-weight: bold;
+  color: #27ae60;
+  margin: 0 10px 0 0;
+}
+
+.cs_notification-text-wrapper {
+  margin: 0 0 0 33px;
+}
+
+.cs_notification .fa-check {
+  font-size: 22px;
 }

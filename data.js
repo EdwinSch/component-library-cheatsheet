@@ -94,22 +94,25 @@ export const data = [
         rules: [
           {
             classname: "background-success",
-            results: ["background-color: ??"],
+            results: ["background-color: #27ae60"],
           },
           {
             classname: "background-warning",
-            results: ["background-color: ??"],
+            results: ["background-color: #f2994a"],
           },
-          { classname: "background-danger", results: ["background-color: ??"] },
+          { classname: "background-danger", 
+            results: ["background-color: #c6002a"] },
           {
             classname: "background-default",
-            results: ["background-color: ??"],
+            results: ["background-color: #c6002a"],
           },
           {
             classname: "background-inverse",
-            results: ["background-color: ??"],
+            results: ["background-color: #24276c"],
           },
-          { classname: "background-info", results: ["background-color: ??"] },
+          { classname: "background-info", 
+            results: ["background-color: #0086d9"] 
+          },
         ],
       },
     ],

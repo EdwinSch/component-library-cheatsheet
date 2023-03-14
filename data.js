@@ -100,8 +100,9 @@ export const data = [
             classname: "background-warning",
             results: ["background-color: #f2994a"],
           },
-          { classname: "background-danger", 
-            results: ["background-color: #c6002a"] 
+          {
+            classname: "background-danger",
+            results: ["background-color: #c6002a"],
           },
           {
             classname: "background-default",
@@ -111,8 +112,9 @@ export const data = [
             classname: "background-inverse",
             results: ["background-color: #24276c"],
           },
-          { classname: "background-info", 
-            results: ["background-color: #0086d9"] 
+          {
+            classname: "background-info",
+            results: ["background-color: #0086d9"],
           },
         ],
       },
@@ -211,9 +213,7 @@ export const data = [
       },
       {
         sub_title: "Rounded corners",
-        rules: [
-          { classname: "border-rounded", results: ["8px"] },
-        ],
+        rules: [{ classname: "border-rounded", results: ["8px"] }],
       },
     ],
   },

@@ -8,6 +8,7 @@
 /* --- LINK STYLES --- */
 a {
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 a:hover {
@@ -224,6 +225,11 @@ aside .cat-category-container a:hover {
   align-content: start;
   width: 100%;
   padding: 1.5rem;
+}
+
+.result-error {
+  color: var(--avansRed);
+  font-size: 1rem;
 }
 
 /* --- CAT ITEM STYLES --- */

@@ -2,29 +2,49 @@
 
 import { data } from "./data.js";
 
+let filteredSearch = data;
+
 const filterBtnContainer = document.querySelector(".filter-btns-container");
 const output = document.querySelector(".content");
 const notification = document.querySelector(".cs_notification");
+const textFilter = document.getElementById("search");
 
 let displaySubCategories;
 let displayRules;
 let displayResults;
-let getFilterBtns;
+// let getFilterBtns;
 
 /* ---- SCRIPT ---- */
 
-// Map filter buttons (On Load)
-mapFilterBtns();
+// Display data/content on load
+displayData();
 
-// Create new component container & map full data set (On Load)
-const displayData = data.map(function (category) {
-  const newComponent = document.createElement("article");
-  newComponent.classList.add("cat-container");
-  newComponent.dataset.id = category.id;
-  newComponent.innerHTML = `
-    <div class="main-cat-title">
+// Text filter functionality
+textFilter.addEventListener("keyup", function () {
+  let inputValue = textFilter.value;
+
+  filteredSearch = data.filter(function (result) {
+    return result.cat_title.toLowerCase().includes(inputValue);
+  });
+  displayData();
+});
+
+/* ---- FUNCTIONS ---- */
+
+// Display data/content function
+function displayData() {
+  // check for empty search result
+  if (filteredSearch.length < 1) {
+    output.innerHTML = `<p class="result-error">no results</p>`;
+    return;
+  }
+  // Create new component container & map full data set
+  output.innerHTML = filteredSearch
+    .map(function (category) {
+      return `<article class="cat-container" data-id=${category.id}>
+      <div class="main-cat-title">
         <h2 class="cat-title">${category.cat_title}</h2>
-    </div>
+      </div>
         <div class="sub-cat-container">
           ${(displaySubCategories = category.sub_cats.map(function (sub) {
             return `
@@ -50,33 +70,12 @@ const displayData = data.map(function (category) {
             `;
           })).join("")}
         </div>
-    `;
-  // Push category components to DOM
-  output.appendChild(newComponent);
-  // Invoke clipboard function
-  copyToClipboard();
-});
-
-// --- filter buttons functionality
-getFilterBtns.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    console.log(this.dataset.id);
-  });
-});
-
-/* ---- FUNCTIONS ---- */
-
-// Map filter buttons function
-function mapFilterBtns() {
-  const displayFilterBtns = data
-    .map(function (btn) {
-      return `<li>
-            <a href="#" class="filter-btn" title="Click to filter by category" data-id=${btn.cat_title}>${btn.cat_title}</a>
-          </li>`;
+      </article>
+      `;
     })
     .join("");
-  filterBtnContainer.innerHTML = displayFilterBtns;
-  getFilterBtns = document.querySelectorAll(".filter-btn");
+  // Invoke clipboard function
+  copyToClipboard();
 }
 
 // Clipboard function

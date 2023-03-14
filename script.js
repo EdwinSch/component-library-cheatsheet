@@ -13,7 +13,7 @@ let displaySubCategories;
 let displayRules;
 let displayResults;
 
-/* ---- SCRIPT ---- */
+/* -------- SCRIPT -------- */
 
 // Display data/content on load
 displayData();
@@ -27,10 +27,29 @@ textFilter.addEventListener("keyup", function () {
   filteredSearch = data.filter(function (result) {
     return result.cat_title.toLowerCase().includes(inputValue);
   });
+  // re-invoke display
   displayData();
 });
 
-/* ---- FUNCTIONS ---- */
+// Filter button functionality
+filterBtnContainer.addEventListener("click", function (event) {
+  const targetBtn = event.target;
+
+  if (targetBtn.dataset.id === "all") {
+    filteredSearch = data;
+  } else {
+    filteredSearch = data.filter(function (cat) {
+      return cat.cat_title === targetBtn.dataset.id;
+    });
+  }
+  // reset
+  textFilter.value = "";
+  f;
+  // re-invoke display
+  displayData();
+});
+
+/* -------- FUNCTIONS -------- */
 
 // Display data/content function
 function displayData() {
@@ -86,8 +105,8 @@ function displayFilterBtns() {
   filterBtnContainer.innerHTML = buttons
     .map((cat) => {
       return `<li>
-            <a href="#" class="filter-btn" title="Click to filter by category" data-id=${cat}>${cat}</a>
-          </li>`;
+                <a href="#" class="filter-btn" title="Click to filter by category" data-id=${cat}>${cat}</a>
+              </li>`;
     })
     .join("");
 }

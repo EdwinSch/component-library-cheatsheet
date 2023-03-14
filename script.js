@@ -12,12 +12,13 @@ const textFilter = document.getElementById("search");
 let displaySubCategories;
 let displayRules;
 let displayResults;
-// let getFilterBtns;
 
 /* ---- SCRIPT ---- */
 
 // Display data/content on load
 displayData();
+// Display buttons on load
+displayFilterBtns();
 
 // Text filter functionality
 textFilter.addEventListener("keyup", function () {
@@ -76,6 +77,19 @@ function displayData() {
     .join("");
   // Invoke clipboard function
   copyToClipboard();
+}
+
+// Display dynamic filter buttons
+function displayFilterBtns() {
+  const buttons = ["all", ...new Set(data.map((cat) => cat.cat_title))];
+
+  filterBtnContainer.innerHTML = buttons
+    .map((cat) => {
+      return `<li>
+            <a href="#" class="filter-btn" title="Click to filter by category" data-id=${cat}>${cat}</a>
+          </li>`;
+    })
+    .join("");
 }
 
 // Clipboard function

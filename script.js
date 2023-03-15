@@ -27,7 +27,8 @@ textFilter.addEventListener("keyup", function () {
   filteredSearch = data.filter(function (result) {
     return result.cat_title.toLowerCase().includes(inputValue);
   });
-  // re-invoke display
+
+  // Re-call display data
   displayData();
 });
 
@@ -44,7 +45,7 @@ filterBtnContainer.addEventListener("click", function (event) {
   }
   // reset
   textFilter.value = "";
-  // re-invoke display
+  // Re-call display data
   displayData();
 });
 
@@ -93,7 +94,7 @@ function displayData() {
       `;
     })
     .join("");
-  // Invoke clipboard function
+  // Call clipboard function
   copyToClipboard();
 }
 

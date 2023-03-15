@@ -25,7 +25,10 @@ textFilter.addEventListener("keyup", function () {
   let inputValue = textFilter.value;
 
   filteredSearch = data.filter(function (result) {
-    return result.cat_title.toLowerCase().includes(inputValue);
+    return (
+      result.query_keys.toLowerCase().includes(inputValue) ||
+      result.cat_title.toLowerCase().includes(inputValue)
+    );
   });
 
   // Re-call display data

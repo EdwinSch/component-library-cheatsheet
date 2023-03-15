@@ -3,6 +3,7 @@ export const data = [
   {
     id: "s6zy63",
     cat_title: "typography",
+    query_keys: "text, color",
     sub_cats: [
       {
         sub_title: "alignment",
@@ -88,6 +89,7 @@ export const data = [
   {
     id: "xpwzp3",
     cat_title: "backgrounds",
+    query_keys: "background, success, warning",
     sub_cats: [
       {
         sub_title: "color",
@@ -124,6 +126,7 @@ export const data = [
   {
     id: "m87wuf",
     cat_title: "display",
+    query_keys: "d, block, flex, inline",
     sub_cats: [
       {
         sub_title: "type",
@@ -142,6 +145,7 @@ export const data = [
   {
     id: "5lhrki",
     cat_title: "align",
+    query_keys: "align, top, bottom",
     sub_cats: [
       {
         sub_title: "vertical alignment",
@@ -157,6 +161,7 @@ export const data = [
   {
     id: "h3pbrf",
     cat_title: "dimensions",
+    query_keys: "h, w",
     sub_cats: [
       {
         sub_title: "height",
@@ -185,6 +190,7 @@ export const data = [
   {
     id: "2i0watf0",
     cat_title: "responsive",
+    query_keys: "hide",
     sub_cats: [
       {
         sub_title: "hide options",
@@ -200,6 +206,7 @@ export const data = [
   {
     id: "gfg6jbtr",
     cat_title: "borders",
+    query_keys: "border",
     sub_cats: [
       {
         sub_title: "borders",
@@ -221,6 +228,7 @@ export const data = [
   {
     id: "by8va5fr",
     cat_title: "flexbox",
+    query_keys: "justify, content, align, box",
     sub_cats: [
       {
         sub_title: "box alignment",

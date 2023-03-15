@@ -44,7 +44,6 @@ filterBtnContainer.addEventListener("click", function (event) {
   }
   // reset
   textFilter.value = "";
-  f;
   // re-invoke display
   displayData();
 });

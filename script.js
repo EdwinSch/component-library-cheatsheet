@@ -9,15 +9,16 @@ const output = document.querySelector(".content");
 const notification = document.querySelector(".cs_notification");
 const textFilter = document.getElementById("search");
 
+let filterBtns;
 let displaySubCategories;
 let displayRules;
 let displayResults;
 
 /* -------- SCRIPT -------- */
 
-// Display data/content on load
+// Call data/content on load
 displayData();
-// Display buttons on load
+// Call buttons on load
 displayFilterBtns();
 
 // Text filter functionality
@@ -31,25 +32,27 @@ textFilter.addEventListener("keyup", function () {
     );
   });
 
-  // Re-call display data
+  // Call display data
   displayData();
 });
 
 // Filter button functionality
-filterBtnContainer.addEventListener("click", function (event) {
-  const targetBtn = event.target;
+filterBtns.forEach((button) => {
+  button.addEventListener("click", function (event) {
+    const targetBtn = event.target;
 
-  if (targetBtn.dataset.id === "all") {
-    filteredSearch = data;
-  } else {
-    filteredSearch = data.filter(function (cat) {
-      return cat.cat_title === targetBtn.dataset.id;
-    });
-  }
-  // reset
-  textFilter.value = "";
-  // Re-call display data
-  displayData();
+    if (targetBtn.dataset.id === "all") {
+      filteredSearch = data;
+    } else {
+      filteredSearch = data.filter(function (cat) {
+        return cat.cat_title === targetBtn.dataset.id;
+      });
+    }
+    // Reset text input
+    textFilter.value = "";
+    // Call display data
+    displayData();
+  });
 });
 
 /* -------- FUNCTIONS -------- */
@@ -112,6 +115,8 @@ function displayFilterBtns() {
               </li>`;
     })
     .join("");
+
+  filterBtns = document.querySelectorAll(".filter-btn");
 }
 
 // Clipboard function

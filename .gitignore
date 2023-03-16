@@ -6,7 +6,6 @@
 # Folders
 node_modules/
 .vscode/
-TEMP/
 
 # Specific
 .DS_Store

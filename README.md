@@ -1,6 +1,6 @@
 ## Component Library Cheatsheet
 
-The cheatsheet is a complete and easy overview of all available helper classes within the Avans Component Library. Dynamic content allows searching and filtering. Mendix developer life just got easier!
+The cheatsheet is a complete and easy overview of all available helper classes within the Avans Component Library. Dynamic content allows searching and filtering. Made with ❤️ and JavaScript.
 
 🚀 [Production Deployment](https://component-library-cheatsheet.netlify.app/)
 
@@ -14,5 +14,4 @@ The cheatsheet is a complete and easy overview of all available helper classes w
 
 ### Author
 
-Made with ❤️ and JavaScript.
 &copy; Avans Front-End Gilde 2023

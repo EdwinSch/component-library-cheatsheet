@@ -221,10 +221,18 @@ aside .cat-category-container a:hover {
 .content {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-content: start;
   width: 100%;
   padding: 1.5rem;
+}
+
+@media screen and (min-width: 500px) {
+
+  .content {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
 }
 
 .result-error {
@@ -234,7 +242,6 @@ aside .cat-category-container a:hover {
 
 /* --- CAT ITEM STYLES --- */
 .cat-container {
-  min-width: 300px;
   border: 2px solid black;
   overflow: hidden;
   border-radius: 8px;

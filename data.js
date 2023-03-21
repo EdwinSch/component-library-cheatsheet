@@ -3,7 +3,7 @@ export const data = [
   {
     id: "s6zy63",
     cat_title: "typography",
-    query_keys: "text, color, align",
+    query_keys: "text, color, align, wrapping, nowrap, lowercase, uppercase, capitalize, font-weight, size, bold, light, small, large",
     sub_cats: [
       {
         sub_title: "alignment",
@@ -55,6 +55,10 @@ export const data = [
           {
             classname: "text-large",
             results: ["font-size: 18px"],
+          },
+          {
+            classname: "font-xl",
+            results: ["font-size: 24px"],
           },
           {
             classname: "text-light",
@@ -161,7 +165,7 @@ export const data = [
   {
     id: "h3pbrf",
     cat_title: "dimensions",
-    query_keys: "h, w",
+    query_keys: "h, w, height, width",
     sub_cats: [
       {
         sub_title: "height",
@@ -190,7 +194,7 @@ export const data = [
   {
     id: "2i0watf0",
     cat_title: "responsive",
-    query_keys: "hide, display",
+    query_keys: "hide, display, phone, dekstop, tablet",
     sub_cats: [
       {
         sub_title: "hide options",
@@ -228,7 +232,7 @@ export const data = [
   {
     id: "by8va5fr",
     cat_title: "flexbox",
-    query_keys: "justify, content, align, box, stretch, start, end, center",
+    query_keys: "justify, content, align, box, stretch, start, end, center, between",
     sub_cats: [
       {
         sub_title: "box alignment",
@@ -246,6 +250,132 @@ export const data = [
           { classname: "align-content-between", results: ["space-between"] },
           { classname: "align-content-around", results: ["space-around"] },
           { classname: "align-content-stretch", results: ["stretch"] },
+        ],
+      },
+    ],
+  },
+  // ---- SPACING: MARGIN
+  {
+    id: "j6pyktb8",
+    cat_title: "Spacing: Margin",
+    query_keys: "margin, spacing, top, bottom, left, right",
+    sub_cats: [
+      {
+        sub_title: "margin",
+        rules: [
+          { classname: "marginzero", results: ["0"] },
+          { classname: "marginxs", results: ["4px"] },
+          { classname: "marginsm", results: ["8px"] },
+          { classname: "marginmd", results: ["16px"] },
+          { classname: "marginlg", results: ["24px"] },
+          { classname: "marginxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "margin top",
+        rules: [
+          { classname: "margintopzero", results: ["0"] },
+          { classname: "margintopxs", results: ["4px"] },
+          { classname: "margintopsm", results: ["8px"] },
+          { classname: "margintopmd", results: ["16px"] },
+          { classname: "margintoplg", results: ["24px"] },
+          { classname: "margintopxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "margin right",
+        rules: [
+          { classname: "marginrightzero", results: ["0"] },
+          { classname: "marginrightxs", results: ["4px"] },
+          { classname: "marginrightsm", results: ["8px"] },
+          { classname: "marginrightmd", results: ["16px"] },
+          { classname: "marginrightlg", results: ["24px"] },
+          { classname: "marginrightxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "margin bottom",
+        rules: [
+          { classname: "marginbottomzero", results: ["0"] },
+          { classname: "marginbottomxs", results: ["4px"] },
+          { classname: "marginbottomsm", results: ["8px"] },
+          { classname: "marginbottommd", results: ["16px"] },
+          { classname: "marginbottomlg", results: ["24px"] },
+          { classname: "marginbottomxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "margin left",
+        rules: [
+          { classname: "marginleftzero", results: ["0"] },
+          { classname: "marginleftxs", results: ["4px"] },
+          { classname: "marginleftsm", results: ["8px"] },
+          { classname: "marginleftmd", results: ["16px"] },
+          { classname: "marginleftlg", results: ["24px"] },
+          { classname: "marginleftxl", results: ["32px"] },
+        ],
+      },
+    ],
+  },
+  // ---- SPACING: PADDING
+  {
+    id: "kvz67vj3",
+    cat_title: "Spacing: Padding",
+    query_keys: "padding, spacing, top, bottom, left, right",
+    sub_cats: [
+      {
+        sub_title: "padding",
+        rules: [
+          { classname: "paddingzero", results: ["0"] },
+          { classname: "paddingxs", results: ["4px"] },
+          { classname: "paddingsm", results: ["8px"] },
+          { classname: "paddingmd", results: ["16px"] },
+          { classname: "paddinglg", results: ["24px"] },
+          { classname: "paddingxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "padding top",
+        rules: [
+          { classname: "paddingtopzero", results: ["0"] },
+          { classname: "paddingtopxs", results: ["4px"] },
+          { classname: "paddingtopsm", results: ["8px"] },
+          { classname: "paddingtopmd", results: ["16px"] },
+          { classname: "paddingtoplg", results: ["24px"] },
+          { classname: "paddingtopxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "padding right",
+        rules: [
+          { classname: "paddingrightzero", results: ["0"] },
+          { classname: "paddingrightxs", results: ["4px"] },
+          { classname: "paddingrightsm", results: ["8px"] },
+          { classname: "paddingrightmd", results: ["16px"] },
+          { classname: "paddingrightlg", results: ["24px"] },
+          { classname: "paddingrightxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "padding bottom",
+        rules: [
+          { classname: "paddingbottomzero", results: ["0"] },
+          { classname: "paddingbottomxs", results: ["4px"] },
+          { classname: "paddingbottomsm", results: ["8px"] },
+          { classname: "paddingbottommd", results: ["16px"] },
+          { classname: "paddingbottomlg", results: ["24px"] },
+          { classname: "paddingbottomxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "padding left",
+        rules: [
+          { classname: "paddingleftzero", results: ["0"] },
+          { classname: "paddingleftxs", results: ["4px"] },
+          { classname: "paddingleftsm", results: ["8px"] },
+          { classname: "paddingleftmd", results: ["16px"] },
+          { classname: "paddingleftlg", results: ["24px"] },
+          { classname: "paddingleftxl", results: ["32px"] },
         ],
       },
     ],

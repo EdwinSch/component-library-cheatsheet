@@ -235,9 +235,36 @@ aside .cat-category-container a:hover {
 
 }
 
+/* --- RESULT NOT FOUND STYLES --- */
 .result-error {
-  color: var(--avansRed);
-  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 0 0 0;
+}
+
+@media screen and (min-width: 768px) {
+
+  .result-error {
+    margin: 0;
+    height: calc(100vh - 150px);
+  }
+
+}
+
+.result-error-inner {
+  text-align: center;
+}
+
+.result-error svg {
+  width: 150px;
+  height: auto;
+  margin: 0 0 24px 0;
+}
+
+.result-error h2 {
+  font-size: 24px;
+  margin: 0 0 8px 0;
 }
 
 /* --- CAT ITEM STYLES --- */

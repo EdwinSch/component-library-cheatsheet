@@ -228,7 +228,7 @@ export const data = [
   {
     id: "by8va5fr",
     cat_title: "flexbox",
-    query_keys: "justify, content, align, box, stretch, start, end, center",
+    query_keys: "justify, content, align, box, stretch, start, end, center, between",
     sub_cats: [
       {
         sub_title: "box alignment",
@@ -246,6 +246,69 @@ export const data = [
           { classname: "align-content-between", results: ["space-between"] },
           { classname: "align-content-around", results: ["space-around"] },
           { classname: "align-content-stretch", results: ["stretch"] },
+        ],
+      },
+    ],
+  },
+  // ---- SPACING: MARGIN
+  {
+    id: "j6pyktb8",
+    cat_title: "Spacing: Margin",
+    query_keys: "margin, spacing, top, bottom, left, right",
+    sub_cats: [
+      {
+        sub_title: "margin",
+        rules: [
+          { classname: "marginzero", results: ["0"] },
+          { classname: "marginxs", results: ["4px"] },
+          { classname: "marginsm", results: ["8px"] },
+          { classname: "marginmd", results: ["16px"] },
+          { classname: "marginlg", results: ["24px"] },
+          { classname: "marginxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "margin top",
+        rules: [
+          { classname: "margintopzero", results: ["0"] },
+          { classname: "margintopxs", results: ["4px"] },
+          { classname: "margintopsm", results: ["8px"] },
+          { classname: "margintopmd", results: ["16px"] },
+          { classname: "margintoplg", results: ["24px"] },
+          { classname: "margintopxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "margin top",
+        rules: [
+          { classname: "marginrightzero", results: ["0"] },
+          { classname: "marginrightxs", results: ["4px"] },
+          { classname: "marginrightsm", results: ["8px"] },
+          { classname: "marginrightmd", results: ["16px"] },
+          { classname: "marginrightlg", results: ["24px"] },
+          { classname: "marginrightxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "margin top",
+        rules: [
+          { classname: "marginbottomzero", results: ["0"] },
+          { classname: "marginbottomxs", results: ["4px"] },
+          { classname: "marginbottomsm", results: ["8px"] },
+          { classname: "marginbottommd", results: ["16px"] },
+          { classname: "marginbottomlg", results: ["24px"] },
+          { classname: "marginbottomxl", results: ["32px"] },
+        ],
+      },
+      {
+        sub_title: "margin top",
+        rules: [
+          { classname: "marginleftzero", results: ["0"] },
+          { classname: "marginleftxs", results: ["4px"] },
+          { classname: "marginleftsm", results: ["8px"] },
+          { classname: "marginleftmd", results: ["16px"] },
+          { classname: "marginleftlg", results: ["24px"] },
+          { classname: "marginleftxl", results: ["32px"] },
         ],
       },
     ],

@@ -113,7 +113,11 @@ function displayData() {
 
 // Display dynamic filter buttons
 function displayFilterBtns() {
-  const buttons = ["all", ...new Set(data.map((cat) => cat.cat_title))];
+  const buttons = [...new Set(data.map((cat) => cat.cat_title))];
+  //sort alphabet
+  buttons.sort();
+  // add 'all' to array
+  buttons.unshift("all");
 
   filterBtnContainer.innerHTML = buttons
     .map((cat) => {

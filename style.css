@@ -201,10 +201,12 @@ aside .cat-category-container a {
   margin: 16px 0;
   display: inline-block;
   text-decoration: underline;
+  transition: 200ms ease;
 }
 
 aside .cat-category-container a:hover {
   text-decoration: none;
+  color: var(--avansRed);
 }
 
 @media screen and (min-width: 767px) {
@@ -228,11 +230,9 @@ aside .cat-category-container a:hover {
 }
 
 @media screen and (min-width: 500px) {
-
   .content {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
-
 }
 
 /* --- RESULT NOT FOUND STYLES --- */
@@ -244,12 +244,10 @@ aside .cat-category-container a:hover {
 }
 
 @media screen and (min-width: 768px) {
-
   .result-error {
     margin: 0;
     height: calc(100vh - 150px);
   }
-
 }
 
 .result-error-inner {
@@ -303,6 +301,7 @@ aside .cat-category-container a:hover {
 
 code {
   color: var(--avansRed);
+  transition: 200ms ease;
 }
 
 code:hover {

@@ -3,7 +3,8 @@ export const data = [
   {
     id: "s6zy63",
     cat_title: "typography",
-    query_keys: "text, color, align, wrapping, nowrap, lowercase, uppercase, capitalize, font-weight, size, bold, light, small, large",
+    query_keys:
+      "text, color, align, wrapping, nowrap, lowercase, uppercase, capitalize, font-weight, size, bold, light, small, large",
     sub_cats: [
       {
         sub_title: "alignment",
@@ -232,7 +233,8 @@ export const data = [
   {
     id: "by8va5fr",
     cat_title: "flexbox",
-    query_keys: "justify, content, align, box, stretch, start, end, center, between",
+    query_keys:
+      "justify, content, align, box, stretch, start, end, center, between",
     sub_cats: [
       {
         sub_title: "box alignment",
@@ -257,7 +259,7 @@ export const data = [
   // ---- SPACING: MARGIN
   {
     id: "j6pyktb8",
-    cat_title: "Spacing: Margin",
+    cat_title: "margin",
     query_keys: "margin, spacing, top, bottom, left, right",
     sub_cats: [
       {
@@ -320,7 +322,7 @@ export const data = [
   // ---- SPACING: PADDING
   {
     id: "kvz67vj3",
-    cat_title: "Spacing: Padding",
+    cat_title: "padding",
     query_keys: "padding, spacing, top, bottom, left, right",
     sub_cats: [
       {

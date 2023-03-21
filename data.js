@@ -3,7 +3,7 @@ export const data = [
   {
     id: "s6zy63",
     cat_title: "typography",
-    query_keys: "text, color, align",
+    query_keys: "text, color, align, wrapping, nowrap, lowercase, uppercase, capitalize, font-weight, size, bold, light, small, large",
     sub_cats: [
       {
         sub_title: "alignment",
@@ -55,6 +55,10 @@ export const data = [
           {
             classname: "text-large",
             results: ["font-size: 18px"],
+          },
+          {
+            classname: "font-xl",
+            results: ["font-size: 24px"],
           },
           {
             classname: "text-light",
@@ -309,68 +313,6 @@ export const data = [
           { classname: "marginleftmd", results: ["16px"] },
           { classname: "marginleftlg", results: ["24px"] },
           { classname: "marginleftxl", results: ["32px"] },
-        ],
-      },
-    ],
-  },
-  {
-    id: "kvz67vj3",
-    cat_title: "Spacing: Padding",
-    query_keys: "padding, spacing, top, bottom, left, right",
-    sub_cats: [
-      {
-        sub_title: "padding",
-        rules: [
-          { classname: "paddingzero", results: ["0"] },
-          { classname: "paddingxs", results: ["4px"] },
-          { classname: "paddingsm", results: ["8px"] },
-          { classname: "paddingmd", results: ["16px"] },
-          { classname: "paddinglg", results: ["24px"] },
-          { classname: "paddingxl", results: ["32px"] },
-        ],
-      },
-      {
-        sub_title: "padding top",
-        rules: [
-          { classname: "paddingtopzero", results: ["0"] },
-          { classname: "paddingtopxs", results: ["4px"] },
-          { classname: "paddingtopsm", results: ["8px"] },
-          { classname: "paddingtopmd", results: ["16px"] },
-          { classname: "paddingtoplg", results: ["24px"] },
-          { classname: "paddingtopxl", results: ["32px"] },
-        ],
-      },
-      {
-        sub_title: "padding top",
-        rules: [
-          { classname: "paddingrightzero", results: ["0"] },
-          { classname: "paddingrightxs", results: ["4px"] },
-          { classname: "paddingrightsm", results: ["8px"] },
-          { classname: "paddingrightmd", results: ["16px"] },
-          { classname: "paddingrightlg", results: ["24px"] },
-          { classname: "paddingrightxl", results: ["32px"] },
-        ],
-      },
-      {
-        sub_title: "padding top",
-        rules: [
-          { classname: "paddingbottomzero", results: ["0"] },
-          { classname: "paddingbottomxs", results: ["4px"] },
-          { classname: "paddingbottomsm", results: ["8px"] },
-          { classname: "paddingbottommd", results: ["16px"] },
-          { classname: "paddingbottomlg", results: ["24px"] },
-          { classname: "paddingbottomxl", results: ["32px"] },
-        ],
-      },
-      {
-        sub_title: "padding top",
-        rules: [
-          { classname: "paddingleftzero", results: ["0"] },
-          { classname: "paddingleftxs", results: ["4px"] },
-          { classname: "paddingleftsm", results: ["8px"] },
-          { classname: "paddingleftmd", results: ["16px"] },
-          { classname: "paddingleftlg", results: ["24px"] },
-          { classname: "paddingleftxl", results: ["32px"] },
         ],
       },
     ],

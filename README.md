@@ -6,12 +6,13 @@ The cheatsheet is a complete and easy overview of all available helper classes w
 
 👨‍💻 [DEV Environment](https://edwinsch.github.io/component-library-cheatsheet/)
 
-### Version 1.0.4
+### Version 1.0.2
 
 - Minor UI updates
+- Minor class data updates
 - Added basic analytics
 
-### Version 1.0.2
+### Version 1.0.1
 
 - A11Y optimisation
 - Version number links to release notes and repo

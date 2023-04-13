@@ -216,16 +216,33 @@ export const data = [
       {
         sub_title: "borders",
         rules: [
-          { classname: "border", results: ["1px solid #e5e5e5"] },
-          { classname: "border-top", results: ["1px solid #e5e5e5"] },
-          { classname: "border-bottom", results: ["1px solid #e5e5e5"] },
-          { classname: "border-left", results: ["1px solid #e5e5e5"] },
-          { classname: "border-right", results: ["1px solid #e5e5e5"] },
+          { classname: "border", results: ["border:", "1px solid #e5e5e5"] },
+          {
+            classname: "border-top",
+            results: ["border-top:", "1px solid #e5e5e5"],
+          },
+          {
+            classname: "border-bottom",
+            results: ["border-bottom:", "1px solid #e5e5e5"],
+          },
+          {
+            classname: "border-left",
+            results: ["border-left:", "1px solid #e5e5e5"],
+          },
+          {
+            classname: "border-right",
+            results: ["border-right:", "1px solid #e5e5e5"],
+          },
         ],
       },
       {
         sub_title: "Rounded corners",
-        rules: [{ classname: "border-rounded", results: ["8px"] }],
+        rules: [
+          {
+            classname: "border-rounded",
+            results: ["border-radius: 8px"],
+          },
+        ],
       },
     ],
   },

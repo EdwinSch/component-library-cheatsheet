@@ -264,6 +264,8 @@ export const data = [
           { classname: "justify-content-evenly", results: ["space-evenly"] },
           { classname: "justify-content-stretch", results: ["stretch"] },
           { classname: "align-children-start", results: ["flex-start"] },
+          { classname: "align-children-center", results: ["flex-center"] },
+          { classname: "align-children-end", results: ["flex-end"] },
           { classname: "align-content-end", results: ["flex-end"] },
           { classname: "align-content-center", results: ["center"] },
           { classname: "align-content-between", results: ["space-between"] },
